@@ -3,6 +3,8 @@ import { useSession, signIn, signOut } from "next-auth/client";
 
 export default function Home() {
   const [session] = useSession();
+  console.log('session', session)
+
   return (
     <div>
       <h1>Github OAuth Demo</h1>
